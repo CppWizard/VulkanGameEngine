@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\glm-subbuild\CMakeFiles\416d9b102a8de11c5b80f5b89a2e4d7d\glm-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\glm-subbuild\CMakeFiles\416d9b102a8de11c5b80f5b89a2e4d7d\glm-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\glm-subbuild\CMakeFiles\416d9b102a8de11c5b80f5b89a2e4d7d\glm-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\glm-subbuild\CMakeFiles\416d9b102a8de11c5b80f5b89a2e4d7d\glm-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\glm-subbuild\CMakeFiles\416d9b102a8de11c5b80f5b89a2e4d7d\glm-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\glm-subbuild\CMakeFiles\416d9b102a8de11c5b80f5b89a2e4d7d\glm-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\glm-subbuild\CMakeFiles\416d9b102a8de11c5b80f5b89a2e4d7d\glm-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\glm-subbuild\CMakeFiles\416d9b102a8de11c5b80f5b89a2e4d7d\glm-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\glm-subbuild\CMakeFiles\a21f0091ff7b36ff4a462cd623616483\glm-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\glm-subbuild\CMakeFiles\0892640137eb5a29b1e0c86b6c4de28d\glm-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\glm-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\EngineDev\VulkanGameEngine\external\_deps\glm-subbuild\CMakeFiles\glm-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6EE3DC03-6DC6-3669-92D9-C4906B5112D3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

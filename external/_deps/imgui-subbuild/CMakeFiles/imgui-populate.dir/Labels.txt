@@ -1,0 +1,14 @@
+# Target labels
+ imgui-populate
+# Source files and their labels
+C:/EngineDev/VulkanGameEngine/external/_deps/imgui-subbuild/CMakeFiles/imgui-populate
+C:/EngineDev/VulkanGameEngine/external/_deps/imgui-subbuild/CMakeFiles/68cbddcc6bf556dec0bc405794e866b4/imgui-populate.rule
+C:/EngineDev/VulkanGameEngine/external/_deps/imgui-subbuild/CMakeFiles/6e88b40ca61aa952aa9eb9237b77dead/imgui-populate-complete.rule
+C:/EngineDev/VulkanGameEngine/external/_deps/imgui-subbuild/CMakeFiles/30161811f9dfb39c0dcffbfe0376f6d0/imgui-populate-build.rule
+C:/EngineDev/VulkanGameEngine/external/_deps/imgui-subbuild/CMakeFiles/30161811f9dfb39c0dcffbfe0376f6d0/imgui-populate-configure.rule
+C:/EngineDev/VulkanGameEngine/external/_deps/imgui-subbuild/CMakeFiles/30161811f9dfb39c0dcffbfe0376f6d0/imgui-populate-download.rule
+C:/EngineDev/VulkanGameEngine/external/_deps/imgui-subbuild/CMakeFiles/30161811f9dfb39c0dcffbfe0376f6d0/imgui-populate-install.rule
+C:/EngineDev/VulkanGameEngine/external/_deps/imgui-subbuild/CMakeFiles/30161811f9dfb39c0dcffbfe0376f6d0/imgui-populate-mkdir.rule
+C:/EngineDev/VulkanGameEngine/external/_deps/imgui-subbuild/CMakeFiles/30161811f9dfb39c0dcffbfe0376f6d0/imgui-populate-patch.rule
+C:/EngineDev/VulkanGameEngine/external/_deps/imgui-subbuild/CMakeFiles/30161811f9dfb39c0dcffbfe0376f6d0/imgui-populate-test.rule
+C:/EngineDev/VulkanGameEngine/external/_deps/imgui-subbuild/CMakeFiles/30161811f9dfb39c0dcffbfe0376f6d0/imgui-populate-update.rule

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\glfw-subbuild\CMakeFiles\fdb1f9459534d855a7f6181a4a7621e7\glfw-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\glfw-subbuild\CMakeFiles\fdb1f9459534d855a7f6181a4a7621e7\glfw-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\glfw-subbuild\CMakeFiles\fdb1f9459534d855a7f6181a4a7621e7\glfw-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\glfw-subbuild\CMakeFiles\fdb1f9459534d855a7f6181a4a7621e7\glfw-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\glfw-subbuild\CMakeFiles\fdb1f9459534d855a7f6181a4a7621e7\glfw-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\glfw-subbuild\CMakeFiles\fdb1f9459534d855a7f6181a4a7621e7\glfw-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\glfw-subbuild\CMakeFiles\fdb1f9459534d855a7f6181a4a7621e7\glfw-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\glfw-subbuild\CMakeFiles\fdb1f9459534d855a7f6181a4a7621e7\glfw-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\glfw-subbuild\CMakeFiles\263ba33aeb9253826e0cecf16cd3420b\glfw-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\glfw-subbuild\CMakeFiles\c0ed79c6a2a17e01dd2ed55a9b65f2d7\glfw-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\glfw-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\EngineDev\VulkanGameEngine\external\_deps\glfw-subbuild\CMakeFiles\glfw-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1D34237F-0185-3F78-8472-A506E285B597}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

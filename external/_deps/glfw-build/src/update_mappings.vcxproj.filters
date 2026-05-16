@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\CMakeFiles\f694f43ab3c2023cc031f37a8bba6a90\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\CMake\GenerateMappings.cmake" />
+    <None Include="C:\EngineDev\VulkanGameEngine\external\_deps\glfw-build\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B0915A70-C2B2-35C0-92BA-D122DE0D4FB4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{E5960965-E9AB-3072-91DA-AAB9537C6EDF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

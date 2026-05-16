@@ -1,0 +1,10 @@
+^C:\ENGINEDEV\VULKANGAMEENGINE\EXTERNAL\_DEPS\IMGUI-SUBBUILD\CMAKEFILES\68CBDDCC6BF556DEC0BC405794E866B4\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/EngineDev/VulkanGameEngine/external/_deps/imgui-subbuild -BC:/EngineDev/VulkanGameEngine/external/_deps/imgui-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/EngineDev/VulkanGameEngine/external/_deps/imgui-subbuild/imgui-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

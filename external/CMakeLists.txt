@@ -18,7 +18,13 @@ FetchContent_Declare(
     GIT_TAG docking
 )
 
-FetchContent_MakeAvailable(glfw glm imgui)
+FetchContent_Declare(
+    stb
+    GIT_REPOSITORY https://github.com/nothings/stb.git
+    GIT_TAG master
+)
+
+FetchContent_MakeAvailable(glfw glm imgui stb)
 
 add_library(imgui_backend STATIC
     ${imgui_SOURCE_DIR}/imgui.cpp
@@ -35,3 +41,7 @@ target_include_directories(imgui_backend PUBLIC
 )
 
 target_link_libraries(imgui_backend PUBLIC glfw Vulkan::Vulkan)
+
+add_library(stb_image INTERFACE)
+
+target_include_directories(stb_image INTERFACE ${stb_SOURCE_DIR})

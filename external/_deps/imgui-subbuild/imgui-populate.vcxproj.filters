@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\imgui-subbuild\CMakeFiles\30161811f9dfb39c0dcffbfe0376f6d0\imgui-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\imgui-subbuild\CMakeFiles\30161811f9dfb39c0dcffbfe0376f6d0\imgui-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\imgui-subbuild\CMakeFiles\30161811f9dfb39c0dcffbfe0376f6d0\imgui-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\imgui-subbuild\CMakeFiles\30161811f9dfb39c0dcffbfe0376f6d0\imgui-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\imgui-subbuild\CMakeFiles\30161811f9dfb39c0dcffbfe0376f6d0\imgui-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\imgui-subbuild\CMakeFiles\30161811f9dfb39c0dcffbfe0376f6d0\imgui-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\imgui-subbuild\CMakeFiles\30161811f9dfb39c0dcffbfe0376f6d0\imgui-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\imgui-subbuild\CMakeFiles\30161811f9dfb39c0dcffbfe0376f6d0\imgui-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\imgui-subbuild\CMakeFiles\6e88b40ca61aa952aa9eb9237b77dead\imgui-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\imgui-subbuild\CMakeFiles\68cbddcc6bf556dec0bc405794e866b4\imgui-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\imgui-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\EngineDev\VulkanGameEngine\external\_deps\imgui-subbuild\CMakeFiles\imgui-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F44609DF-4A09-3230-AC7A-184A72FF1EE7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

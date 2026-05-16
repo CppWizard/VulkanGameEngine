@@ -1,0 +1,10 @@
+^C:\ENGINEDEV\VULKANGAMEENGINE\EXTERNAL\_DEPS\GLM-SUBBUILD\CMAKEFILES\0892640137EB5A29B1E0C86B6C4DE28D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/EngineDev/VulkanGameEngine/external/_deps/glm-subbuild -BC:/EngineDev/VulkanGameEngine/external/_deps/glm-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/EngineDev/VulkanGameEngine/external/_deps/glm-subbuild/glm-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

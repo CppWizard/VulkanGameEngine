@@ -1,0 +1,14 @@
+# Target labels
+ glfw-populate
+# Source files and their labels
+C:/EngineDev/VulkanGameEngine/external/_deps/glfw-subbuild/CMakeFiles/glfw-populate
+C:/EngineDev/VulkanGameEngine/external/_deps/glfw-subbuild/CMakeFiles/c0ed79c6a2a17e01dd2ed55a9b65f2d7/glfw-populate.rule
+C:/EngineDev/VulkanGameEngine/external/_deps/glfw-subbuild/CMakeFiles/263ba33aeb9253826e0cecf16cd3420b/glfw-populate-complete.rule
+C:/EngineDev/VulkanGameEngine/external/_deps/glfw-subbuild/CMakeFiles/fdb1f9459534d855a7f6181a4a7621e7/glfw-populate-build.rule
+C:/EngineDev/VulkanGameEngine/external/_deps/glfw-subbuild/CMakeFiles/fdb1f9459534d855a7f6181a4a7621e7/glfw-populate-configure.rule
+C:/EngineDev/VulkanGameEngine/external/_deps/glfw-subbuild/CMakeFiles/fdb1f9459534d855a7f6181a4a7621e7/glfw-populate-download.rule
+C:/EngineDev/VulkanGameEngine/external/_deps/glfw-subbuild/CMakeFiles/fdb1f9459534d855a7f6181a4a7621e7/glfw-populate-install.rule
+C:/EngineDev/VulkanGameEngine/external/_deps/glfw-subbuild/CMakeFiles/fdb1f9459534d855a7f6181a4a7621e7/glfw-populate-mkdir.rule
+C:/EngineDev/VulkanGameEngine/external/_deps/glfw-subbuild/CMakeFiles/fdb1f9459534d855a7f6181a4a7621e7/glfw-populate-patch.rule
+C:/EngineDev/VulkanGameEngine/external/_deps/glfw-subbuild/CMakeFiles/fdb1f9459534d855a7f6181a4a7621e7/glfw-populate-test.rule
+C:/EngineDev/VulkanGameEngine/external/_deps/glfw-subbuild/CMakeFiles/fdb1f9459534d855a7f6181a4a7621e7/glfw-populate-update.rule

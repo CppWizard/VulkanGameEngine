@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/glfw-subbuild/CMakeFiles/glfw-populate"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/glfw-subbuild/CMakeFiles/c0ed79c6a2a17e01dd2ed55a9b65f2d7/glfw-populate.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/glfw-subbuild/CMakeFiles/263ba33aeb9253826e0cecf16cd3420b/glfw-populate-complete.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/glfw-subbuild/CMakeFiles/fdb1f9459534d855a7f6181a4a7621e7/glfw-populate-build.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/glfw-subbuild/CMakeFiles/fdb1f9459534d855a7f6181a4a7621e7/glfw-populate-configure.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/glfw-subbuild/CMakeFiles/fdb1f9459534d855a7f6181a4a7621e7/glfw-populate-download.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/glfw-subbuild/CMakeFiles/fdb1f9459534d855a7f6181a4a7621e7/glfw-populate-install.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/glfw-subbuild/CMakeFiles/fdb1f9459534d855a7f6181a4a7621e7/glfw-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/glfw-subbuild/CMakeFiles/fdb1f9459534d855a7f6181a4a7621e7/glfw-populate-patch.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/glfw-subbuild/CMakeFiles/fdb1f9459534d855a7f6181a4a7621e7/glfw-populate-test.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/glfw-subbuild/CMakeFiles/fdb1f9459534d855a7f6181a4a7621e7/glfw-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glfw-populate"
+		],
+		"name" : "glfw-populate"
+	}
+}

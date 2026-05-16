@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/imgui-subbuild/CMakeFiles/imgui-populate"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/imgui-subbuild/CMakeFiles/68cbddcc6bf556dec0bc405794e866b4/imgui-populate.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/imgui-subbuild/CMakeFiles/6e88b40ca61aa952aa9eb9237b77dead/imgui-populate-complete.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/imgui-subbuild/CMakeFiles/30161811f9dfb39c0dcffbfe0376f6d0/imgui-populate-build.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/imgui-subbuild/CMakeFiles/30161811f9dfb39c0dcffbfe0376f6d0/imgui-populate-configure.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/imgui-subbuild/CMakeFiles/30161811f9dfb39c0dcffbfe0376f6d0/imgui-populate-download.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/imgui-subbuild/CMakeFiles/30161811f9dfb39c0dcffbfe0376f6d0/imgui-populate-install.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/imgui-subbuild/CMakeFiles/30161811f9dfb39c0dcffbfe0376f6d0/imgui-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/imgui-subbuild/CMakeFiles/30161811f9dfb39c0dcffbfe0376f6d0/imgui-populate-patch.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/imgui-subbuild/CMakeFiles/30161811f9dfb39c0dcffbfe0376f6d0/imgui-populate-test.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/imgui-subbuild/CMakeFiles/30161811f9dfb39c0dcffbfe0376f6d0/imgui-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"imgui-populate"
+		],
+		"name" : "imgui-populate"
+	}
+}

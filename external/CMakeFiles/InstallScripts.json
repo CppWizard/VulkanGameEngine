@@ -1,0 +1,17 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/EngineDev/VulkanGameEngine/external/cmake_install.cmake",
+		"C:/EngineDev/VulkanGameEngine/external/external/cmake_install.cmake",
+		"C:/EngineDev/VulkanGameEngine/external/_deps/glfw-build/cmake_install.cmake",
+		"C:/EngineDev/VulkanGameEngine/external/_deps/glfw-build/src/cmake_install.cmake",
+		"C:/EngineDev/VulkanGameEngine/external/_deps/glfw-build/docs/cmake_install.cmake",
+		"C:/EngineDev/VulkanGameEngine/external/_deps/glm-build/cmake_install.cmake",
+		"C:/EngineDev/VulkanGameEngine/external/_deps/glm-build/glm/cmake_install.cmake",
+		"C:/EngineDev/VulkanGameEngine/external/engine/cmake_install.cmake",
+		"C:/EngineDev/VulkanGameEngine/external/shaders/cmake_install.cmake",
+		"C:/EngineDev/VulkanGameEngine/external/editor/cmake_install.cmake",
+		"C:/EngineDev/VulkanGameEngine/external/game/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

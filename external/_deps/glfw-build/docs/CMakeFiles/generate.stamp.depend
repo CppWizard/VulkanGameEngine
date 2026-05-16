@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+C:/EngineDev/VulkanGameEngine/external/CMakeFiles/cmake.verify_globs
+C:/EngineDev/VulkanGameEngine/external/_deps/glfw-src/docs/CMakeLists.txt
+C:/Program Files/CMake/share/cmake-4.1/Modules/FindDoxygen.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/FindPackageMessage.cmake

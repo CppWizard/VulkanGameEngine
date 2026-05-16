@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/EngineDev/VulkanGameEngine/external/_deps/glfw-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
