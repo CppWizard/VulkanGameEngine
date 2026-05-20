@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild/CMakeFiles/stb-populate"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild/CMakeFiles/72f51e663020e604e80e1de77e77e1e5/stb-populate.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild/CMakeFiles/2d6c221c57fd4b3d3919834eb0b1af7c/stb-populate-complete.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild/CMakeFiles/95293bccf3fc6606f0c9798b45a6e2b9/stb-populate-build.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild/CMakeFiles/95293bccf3fc6606f0c9798b45a6e2b9/stb-populate-configure.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild/CMakeFiles/95293bccf3fc6606f0c9798b45a6e2b9/stb-populate-download.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild/CMakeFiles/95293bccf3fc6606f0c9798b45a6e2b9/stb-populate-install.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild/CMakeFiles/95293bccf3fc6606f0c9798b45a6e2b9/stb-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild/CMakeFiles/95293bccf3fc6606f0c9798b45a6e2b9/stb-populate-patch.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild/CMakeFiles/95293bccf3fc6606f0c9798b45a6e2b9/stb-populate-test.rule"
+		},
+		{
+			"file" : "C:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild/CMakeFiles/95293bccf3fc6606f0c9798b45a6e2b9/stb-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"stb-populate"
+		],
+		"name" : "stb-populate"
+	}
+}

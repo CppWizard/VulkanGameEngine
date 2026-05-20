@@ -1,0 +1,150 @@
+^C:\ENGINEDEV\VULKANGAMEENGINE\EXTERNAL\_DEPS\STB-SUBBUILD\CMAKEFILES\95293BCCF3FC6606F0C9798B45A6E2B9\STB-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P C:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild/stb-populate-prefix/tmp/stb-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/Debug/stb-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\ENGINEDEV\VULKANGAMEENGINE\EXTERNAL\_DEPS\STB-SUBBUILD\CMAKEFILES\95293BCCF3FC6606F0C9798B45A6E2B9\STB-POPULATE-DOWNLOAD.RULE
+setlocal
+cd C:\EngineDev\VulkanGameEngine\external\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild/stb-populate-prefix/tmp/stb-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/Debug/stb-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\ENGINEDEV\VULKANGAMEENGINE\EXTERNAL\_DEPS\STB-SUBBUILD\CMAKEFILES\95293BCCF3FC6606F0C9798B45A6E2B9\STB-POPULATE-UPDATE.RULE
+setlocal
+cd C:\EngineDev\VulkanGameEngine\external\_deps\stb-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild/stb-populate-prefix/tmp/stb-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\ENGINEDEV\VULKANGAMEENGINE\EXTERNAL\_DEPS\STB-SUBBUILD\CMAKEFILES\95293BCCF3FC6606F0C9798B45A6E2B9\STB-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/Debug/stb-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\ENGINEDEV\VULKANGAMEENGINE\EXTERNAL\_DEPS\STB-SUBBUILD\CMAKEFILES\95293BCCF3FC6606F0C9798B45A6E2B9\STB-POPULATE-CONFIGURE.RULE
+setlocal
+cd C:\EngineDev\VulkanGameEngine\external\_deps\stb-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/Debug/stb-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\ENGINEDEV\VULKANGAMEENGINE\EXTERNAL\_DEPS\STB-SUBBUILD\CMAKEFILES\95293BCCF3FC6606F0C9798B45A6E2B9\STB-POPULATE-BUILD.RULE
+setlocal
+cd C:\EngineDev\VulkanGameEngine\external\_deps\stb-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/Debug/stb-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\ENGINEDEV\VULKANGAMEENGINE\EXTERNAL\_DEPS\STB-SUBBUILD\CMAKEFILES\95293BCCF3FC6606F0C9798B45A6E2B9\STB-POPULATE-INSTALL.RULE
+setlocal
+cd C:\EngineDev\VulkanGameEngine\external\_deps\stb-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/Debug/stb-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\ENGINEDEV\VULKANGAMEENGINE\EXTERNAL\_DEPS\STB-SUBBUILD\CMAKEFILES\95293BCCF3FC6606F0C9798B45A6E2B9\STB-POPULATE-TEST.RULE
+setlocal
+cd C:\EngineDev\VulkanGameEngine\external\_deps\stb-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/Debug/stb-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\ENGINEDEV\VULKANGAMEENGINE\EXTERNAL\_DEPS\STB-SUBBUILD\CMAKEFILES\2D6C221C57FD4B3D3919834EB0B1AF7C\STB-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild/CMakeFiles/Debug/stb-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/Debug/stb-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\ENGINEDEV\VULKANGAMEENGINE\EXTERNAL\_DEPS\STB-SUBBUILD\CMAKEFILES\72F51E663020E604E80E1DE77E77E1E5\STB-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\ENGINEDEV\VULKANGAMEENGINE\EXTERNAL\_DEPS\STB-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild -BC:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild --check-stamp-file C:/EngineDev/VulkanGameEngine/external/_deps/stb-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

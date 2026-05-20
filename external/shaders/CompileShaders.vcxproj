@@ -105,6 +105,186 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\CMakeFiles\d2fa9d3cf83b67d21183f3b1f792c683\triangle.frag.spv.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling shader triangle.frag</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/EngineDev/VulkanGameEngine/external/bin/shaders
+if %errorlevel% neq 0 goto :cmEnd
+C:\VulkanSDK\1.4.341.1\Bin\glslc.exe C:/EngineDev/VulkanGameEngine/shaders/triangle.frag -o C:/EngineDev/VulkanGameEngine/external/bin/shaders/triangle.frag.spv
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\EngineDev\VulkanGameEngine\shaders\triangle.frag;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\EngineDev\VulkanGameEngine\external\bin\shaders\triangle.frag.spv</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling shader triangle.frag</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/EngineDev/VulkanGameEngine/external/bin/shaders
+if %errorlevel% neq 0 goto :cmEnd
+C:\VulkanSDK\1.4.341.1\Bin\glslc.exe C:/EngineDev/VulkanGameEngine/shaders/triangle.frag -o C:/EngineDev/VulkanGameEngine/external/bin/shaders/triangle.frag.spv
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\EngineDev\VulkanGameEngine\shaders\triangle.frag;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\EngineDev\VulkanGameEngine\external\bin\shaders\triangle.frag.spv</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Compiling shader triangle.frag</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/EngineDev/VulkanGameEngine/external/bin/shaders
+if %errorlevel% neq 0 goto :cmEnd
+C:\VulkanSDK\1.4.341.1\Bin\glslc.exe C:/EngineDev/VulkanGameEngine/shaders/triangle.frag -o C:/EngineDev/VulkanGameEngine/external/bin/shaders/triangle.frag.spv
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\EngineDev\VulkanGameEngine\shaders\triangle.frag;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\EngineDev\VulkanGameEngine\external\bin\shaders\triangle.frag.spv</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Compiling shader triangle.frag</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/EngineDev/VulkanGameEngine/external/bin/shaders
+if %errorlevel% neq 0 goto :cmEnd
+C:\VulkanSDK\1.4.341.1\Bin\glslc.exe C:/EngineDev/VulkanGameEngine/shaders/triangle.frag -o C:/EngineDev/VulkanGameEngine/external/bin/shaders/triangle.frag.spv
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\EngineDev\VulkanGameEngine\shaders\triangle.frag;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\EngineDev\VulkanGameEngine\external\bin\shaders\triangle.frag.spv</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\CMakeFiles\d2fa9d3cf83b67d21183f3b1f792c683\triangle.vert.spv.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling shader triangle.vert</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/EngineDev/VulkanGameEngine/external/bin/shaders
+if %errorlevel% neq 0 goto :cmEnd
+C:\VulkanSDK\1.4.341.1\Bin\glslc.exe C:/EngineDev/VulkanGameEngine/shaders/triangle.vert -o C:/EngineDev/VulkanGameEngine/external/bin/shaders/triangle.vert.spv
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\EngineDev\VulkanGameEngine\shaders\triangle.vert;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\EngineDev\VulkanGameEngine\external\bin\shaders\triangle.vert.spv</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling shader triangle.vert</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/EngineDev/VulkanGameEngine/external/bin/shaders
+if %errorlevel% neq 0 goto :cmEnd
+C:\VulkanSDK\1.4.341.1\Bin\glslc.exe C:/EngineDev/VulkanGameEngine/shaders/triangle.vert -o C:/EngineDev/VulkanGameEngine/external/bin/shaders/triangle.vert.spv
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\EngineDev\VulkanGameEngine\shaders\triangle.vert;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\EngineDev\VulkanGameEngine\external\bin\shaders\triangle.vert.spv</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Compiling shader triangle.vert</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/EngineDev/VulkanGameEngine/external/bin/shaders
+if %errorlevel% neq 0 goto :cmEnd
+C:\VulkanSDK\1.4.341.1\Bin\glslc.exe C:/EngineDev/VulkanGameEngine/shaders/triangle.vert -o C:/EngineDev/VulkanGameEngine/external/bin/shaders/triangle.vert.spv
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\EngineDev\VulkanGameEngine\shaders\triangle.vert;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\EngineDev\VulkanGameEngine\external\bin\shaders\triangle.vert.spv</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Compiling shader triangle.vert</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/EngineDev/VulkanGameEngine/external/bin/shaders
+if %errorlevel% neq 0 goto :cmEnd
+C:\VulkanSDK\1.4.341.1\Bin\glslc.exe C:/EngineDev/VulkanGameEngine/shaders/triangle.vert -o C:/EngineDev/VulkanGameEngine/external/bin/shaders/triangle.vert.spv
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\EngineDev\VulkanGameEngine\shaders\triangle.vert;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\EngineDev\VulkanGameEngine\external\bin\shaders\triangle.vert.spv</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\CMakeFiles\f6fea122de474ad983aaa81193443a14\CompileShaders.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\EngineDev\VulkanGameEngine\external\bin\shaders\triangle.frag.spv;C:\EngineDev\VulkanGameEngine\external\bin\shaders\triangle.vert.spv;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\EngineDev\VulkanGameEngine\external\shaders\CMakeFiles\CompileShaders</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\EngineDev\VulkanGameEngine\external\bin\shaders\triangle.frag.spv;C:\EngineDev\VulkanGameEngine\external\bin\shaders\triangle.vert.spv;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\EngineDev\VulkanGameEngine\external\shaders\CMakeFiles\CompileShaders</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\EngineDev\VulkanGameEngine\external\bin\shaders\triangle.frag.spv;C:\EngineDev\VulkanGameEngine\external\bin\shaders\triangle.vert.spv;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\EngineDev\VulkanGameEngine\external\shaders\CMakeFiles\CompileShaders</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\EngineDev\VulkanGameEngine\external\bin\shaders\triangle.frag.spv;C:\EngineDev\VulkanGameEngine\external\bin\shaders\triangle.vert.spv;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\EngineDev\VulkanGameEngine\external\shaders\CMakeFiles\CompileShaders</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
     <CustomBuild Include="C:\EngineDev\VulkanGameEngine\shaders\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/EngineDev/VulkanGameEngine/shaders/CMakeLists.txt</Message>
@@ -162,6 +342,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <None Include="C:\EngineDev\VulkanGameEngine\external\shaders\CMakeFiles\CompileShaders">
+    </None>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

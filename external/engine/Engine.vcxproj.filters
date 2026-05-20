@@ -4,8 +4,89 @@
     <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Core\Timer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Platform\Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Core\Input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Core\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\VulkanContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\Swapchain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\RenderPass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\Framebuffers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\CommandPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\CommandBuffers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\VulkanRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\ShaderModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\GraphicsPipeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\Buffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\VertexBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\DescriptorSetLayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\UniformBuffers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\DescriptorPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\DescriptorSets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\DepthBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\IndexBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\SyncObjects.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\Texture2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\ImGuiLayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Core\Application.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Core\Input.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Core\Logger.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -16,6 +97,78 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Platform\Window.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Camera.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Mesh.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\UniformBufferObject.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vertex.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\Buffer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\CommandBuffers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\CommandPool.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\DepthBuffer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\DescriptorPool.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\DescriptorSetLayout.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\DescriptorSets.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\Framebuffers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\GraphicsPipeline.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\ImGuiLayer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\IndexBuffer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\RenderPass.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\ShaderModule.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\Swapchain.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\SyncObjects.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\Texture2D.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\UniformBuffers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\VertexBuffer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\VulkanContext.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\VulkanRenderer.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

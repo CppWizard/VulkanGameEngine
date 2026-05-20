@@ -13,6 +13,7 @@ endif()
 # SHADER_FILES at shaders/CMakeLists.txt:3 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/EngineDev/VulkanGameEngine/shaders/*.frag")
 set(OLD_GLOB
+  "C:/EngineDev/VulkanGameEngine/shaders/triangle.frag"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -22,6 +23,7 @@ endif()
 # SHADER_FILES at shaders/CMakeLists.txt:3 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/EngineDev/VulkanGameEngine/shaders/*.vert")
 set(OLD_GLOB
+  "C:/EngineDev/VulkanGameEngine/shaders/triangle.vert"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -40,10 +42,36 @@ endif()
 # ENGINE_HEADERS at engine/CMakeLists.txt:1 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/EngineDev/VulkanGameEngine/engine/include/*.hpp")
 set(OLD_GLOB
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Core/Application.hpp"
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Core/Input.hpp"
   "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Core/Logger.hpp"
   "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Core/Timer.hpp"
   "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Engine.hpp"
   "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Platform/Window.hpp"
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Renderer/Camera.hpp"
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Renderer/Mesh.hpp"
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Renderer/UniformBufferObject.hpp"
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Renderer/Vertex.hpp"
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Renderer/Vulkan/Buffer.hpp"
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Renderer/Vulkan/CommandBuffers.hpp"
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Renderer/Vulkan/CommandPool.hpp"
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Renderer/Vulkan/DepthBuffer.hpp"
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Renderer/Vulkan/DescriptorPool.hpp"
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Renderer/Vulkan/DescriptorSetLayout.hpp"
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Renderer/Vulkan/DescriptorSets.hpp"
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Renderer/Vulkan/Framebuffers.hpp"
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Renderer/Vulkan/GraphicsPipeline.hpp"
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Renderer/Vulkan/ImGuiLayer.hpp"
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Renderer/Vulkan/IndexBuffer.hpp"
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Renderer/Vulkan/RenderPass.hpp"
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Renderer/Vulkan/ShaderModule.hpp"
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Renderer/Vulkan/Swapchain.hpp"
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Renderer/Vulkan/SyncObjects.hpp"
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Renderer/Vulkan/Texture2D.hpp"
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Renderer/Vulkan/UniformBuffers.hpp"
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Renderer/Vulkan/VertexBuffer.hpp"
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Renderer/Vulkan/VulkanContext.hpp"
+  "C:/EngineDev/VulkanGameEngine/engine/include/Engine/Renderer/Vulkan/VulkanRenderer.hpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

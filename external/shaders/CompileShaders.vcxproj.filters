@@ -1,8 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\CMakeFiles\d2fa9d3cf83b67d21183f3b1f792c683\triangle.frag.spv.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\CMakeFiles\d2fa9d3cf83b67d21183f3b1f792c683\triangle.vert.spv.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\CMakeFiles\f6fea122de474ad983aaa81193443a14\CompileShaders.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
     <CustomBuild Include="C:\EngineDev\VulkanGameEngine\shaders\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="C:\EngineDev\VulkanGameEngine\external\shaders\CMakeFiles\CompileShaders" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B0915A70-C2B2-35C0-92BA-D122DE0D4FB4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>

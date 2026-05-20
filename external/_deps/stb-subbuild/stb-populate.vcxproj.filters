@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\stb-subbuild\CMakeFiles\95293bccf3fc6606f0c9798b45a6e2b9\stb-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\stb-subbuild\CMakeFiles\95293bccf3fc6606f0c9798b45a6e2b9\stb-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\stb-subbuild\CMakeFiles\95293bccf3fc6606f0c9798b45a6e2b9\stb-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\stb-subbuild\CMakeFiles\95293bccf3fc6606f0c9798b45a6e2b9\stb-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\stb-subbuild\CMakeFiles\95293bccf3fc6606f0c9798b45a6e2b9\stb-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\stb-subbuild\CMakeFiles\95293bccf3fc6606f0c9798b45a6e2b9\stb-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\stb-subbuild\CMakeFiles\95293bccf3fc6606f0c9798b45a6e2b9\stb-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\stb-subbuild\CMakeFiles\95293bccf3fc6606f0c9798b45a6e2b9\stb-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\stb-subbuild\CMakeFiles\2d6c221c57fd4b3d3919834eb0b1af7c\stb-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\stb-subbuild\CMakeFiles\72f51e663020e604e80e1de77e77e1e5\stb-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\EngineDev\VulkanGameEngine\external\_deps\stb-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\EngineDev\VulkanGameEngine\external\_deps\stb-subbuild\CMakeFiles\stb-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{48A4CC55-4B16-3681-8440-F5013AFBA579}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

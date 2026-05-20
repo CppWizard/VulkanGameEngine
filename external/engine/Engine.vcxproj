@@ -78,7 +78,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\EngineDev\VulkanGameEngine\engine\include;C:\EngineDev\VulkanGameEngine\engine\src;C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\include;C:\EngineDev\VulkanGameEngine\external\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\EngineDev\VulkanGameEngine\engine\include;C:\EngineDev\VulkanGameEngine\engine\src;C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\include;C:\EngineDev\VulkanGameEngine\external\_deps\glm-src;C:\EngineDev\VulkanGameEngine\external\_deps\stb-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/VulkanSDK/1.4.341.1/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -106,10 +106,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;ENGINE_DEBUG;GLFW_INCLUDE_NONE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\EngineDev\VulkanGameEngine\engine\include;C:\EngineDev\VulkanGameEngine\engine\src;C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\include;C:\EngineDev\VulkanGameEngine\external\_deps\glm-src;C:\VulkanSDK\1.4.341.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\EngineDev\VulkanGameEngine\engine\include;C:\EngineDev\VulkanGameEngine\engine\src;C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\include;C:\EngineDev\VulkanGameEngine\external\_deps\glm-src;C:\EngineDev\VulkanGameEngine\external\_deps\stb-src;C:\VulkanSDK\1.4.341.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\EngineDev\VulkanGameEngine\engine\include;C:\EngineDev\VulkanGameEngine\engine\src;C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\include;C:\EngineDev\VulkanGameEngine\external\_deps\glm-src;C:\VulkanSDK\1.4.341.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\EngineDev\VulkanGameEngine\engine\include;C:\EngineDev\VulkanGameEngine\engine\src;C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\include;C:\EngineDev\VulkanGameEngine\external\_deps\glm-src;C:\EngineDev\VulkanGameEngine\external\_deps\stb-src;C:\VulkanSDK\1.4.341.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -122,7 +122,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\EngineDev\VulkanGameEngine\engine\include;C:\EngineDev\VulkanGameEngine\engine\src;C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\include;C:\EngineDev\VulkanGameEngine\external\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\EngineDev\VulkanGameEngine\engine\include;C:\EngineDev\VulkanGameEngine\engine\src;C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\include;C:\EngineDev\VulkanGameEngine\external\_deps\glm-src;C:\EngineDev\VulkanGameEngine\external\_deps\stb-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/VulkanSDK/1.4.341.1/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -151,10 +151,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ENGINE_RELEASE;GLFW_INCLUDE_NONE;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\EngineDev\VulkanGameEngine\engine\include;C:\EngineDev\VulkanGameEngine\engine\src;C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\include;C:\EngineDev\VulkanGameEngine\external\_deps\glm-src;C:\VulkanSDK\1.4.341.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\EngineDev\VulkanGameEngine\engine\include;C:\EngineDev\VulkanGameEngine\engine\src;C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\include;C:\EngineDev\VulkanGameEngine\external\_deps\glm-src;C:\EngineDev\VulkanGameEngine\external\_deps\stb-src;C:\VulkanSDK\1.4.341.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\EngineDev\VulkanGameEngine\engine\include;C:\EngineDev\VulkanGameEngine\engine\src;C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\include;C:\EngineDev\VulkanGameEngine\external\_deps\glm-src;C:\VulkanSDK\1.4.341.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\EngineDev\VulkanGameEngine\engine\include;C:\EngineDev\VulkanGameEngine\engine\src;C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\include;C:\EngineDev\VulkanGameEngine\external\_deps\glm-src;C:\EngineDev\VulkanGameEngine\external\_deps\stb-src;C:\VulkanSDK\1.4.341.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -167,7 +167,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\EngineDev\VulkanGameEngine\engine\include;C:\EngineDev\VulkanGameEngine\engine\src;C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\include;C:\EngineDev\VulkanGameEngine\external\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\EngineDev\VulkanGameEngine\engine\include;C:\EngineDev\VulkanGameEngine\engine\src;C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\include;C:\EngineDev\VulkanGameEngine\external\_deps\glm-src;C:\EngineDev\VulkanGameEngine\external\_deps\stb-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/VulkanSDK/1.4.341.1/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -196,10 +196,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GLFW_INCLUDE_NONE;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\EngineDev\VulkanGameEngine\engine\include;C:\EngineDev\VulkanGameEngine\engine\src;C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\include;C:\EngineDev\VulkanGameEngine\external\_deps\glm-src;C:\VulkanSDK\1.4.341.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\EngineDev\VulkanGameEngine\engine\include;C:\EngineDev\VulkanGameEngine\engine\src;C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\include;C:\EngineDev\VulkanGameEngine\external\_deps\glm-src;C:\EngineDev\VulkanGameEngine\external\_deps\stb-src;C:\VulkanSDK\1.4.341.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\EngineDev\VulkanGameEngine\engine\include;C:\EngineDev\VulkanGameEngine\engine\src;C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\include;C:\EngineDev\VulkanGameEngine\external\_deps\glm-src;C:\VulkanSDK\1.4.341.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\EngineDev\VulkanGameEngine\engine\include;C:\EngineDev\VulkanGameEngine\engine\src;C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\include;C:\EngineDev\VulkanGameEngine\external\_deps\glm-src;C:\EngineDev\VulkanGameEngine\external\_deps\stb-src;C:\VulkanSDK\1.4.341.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -212,7 +212,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\EngineDev\VulkanGameEngine\engine\include;C:\EngineDev\VulkanGameEngine\engine\src;C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\include;C:\EngineDev\VulkanGameEngine\external\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\EngineDev\VulkanGameEngine\engine\include;C:\EngineDev\VulkanGameEngine\engine\src;C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\include;C:\EngineDev\VulkanGameEngine\external\_deps\glm-src;C:\EngineDev\VulkanGameEngine\external\_deps\stb-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/VulkanSDK/1.4.341.1/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -240,10 +240,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GLFW_INCLUDE_NONE;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\EngineDev\VulkanGameEngine\engine\include;C:\EngineDev\VulkanGameEngine\engine\src;C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\include;C:\EngineDev\VulkanGameEngine\external\_deps\glm-src;C:\VulkanSDK\1.4.341.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\EngineDev\VulkanGameEngine\engine\include;C:\EngineDev\VulkanGameEngine\engine\src;C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\include;C:\EngineDev\VulkanGameEngine\external\_deps\glm-src;C:\EngineDev\VulkanGameEngine\external\_deps\stb-src;C:\VulkanSDK\1.4.341.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\EngineDev\VulkanGameEngine\engine\include;C:\EngineDev\VulkanGameEngine\engine\src;C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\include;C:\EngineDev\VulkanGameEngine\external\_deps\glm-src;C:\VulkanSDK\1.4.341.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\EngineDev\VulkanGameEngine\engine\include;C:\EngineDev\VulkanGameEngine\engine\src;C:\EngineDev\VulkanGameEngine\external\_deps\glfw-src\include;C:\EngineDev\VulkanGameEngine\external\_deps\glm-src;C:\EngineDev\VulkanGameEngine\external\_deps\stb-src;C:\VulkanSDK\1.4.341.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -312,11 +312,62 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Core\Application.hpp" />
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Core\Input.hpp" />
     <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Core\Logger.hpp" />
     <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Core\Timer.hpp" />
     <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Engine.hpp" />
     <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Platform\Window.hpp" />
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Camera.hpp" />
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Mesh.hpp" />
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\UniformBufferObject.hpp" />
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vertex.hpp" />
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\Buffer.hpp" />
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\CommandBuffers.hpp" />
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\CommandPool.hpp" />
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\DepthBuffer.hpp" />
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\DescriptorPool.hpp" />
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\DescriptorSetLayout.hpp" />
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\DescriptorSets.hpp" />
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\Framebuffers.hpp" />
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\GraphicsPipeline.hpp" />
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\ImGuiLayer.hpp" />
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\IndexBuffer.hpp" />
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\RenderPass.hpp" />
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\ShaderModule.hpp" />
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\Swapchain.hpp" />
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\SyncObjects.hpp" />
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\Texture2D.hpp" />
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\UniformBuffers.hpp" />
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\VertexBuffer.hpp" />
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\VulkanContext.hpp" />
+    <ClInclude Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\VulkanRenderer.hpp" />
     <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Core\Timer.cpp" />
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Platform\Window.cpp" />
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Core\Input.cpp" />
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Core\Application.cpp" />
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\VulkanContext.cpp" />
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\Swapchain.cpp" />
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\RenderPass.cpp" />
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\Framebuffers.cpp" />
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\CommandPool.cpp" />
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\CommandBuffers.cpp" />
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\VulkanRenderer.cpp" />
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\ShaderModule.cpp" />
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\GraphicsPipeline.cpp" />
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\Buffer.cpp" />
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\VertexBuffer.cpp" />
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\DescriptorSetLayout.cpp" />
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\UniformBuffers.cpp" />
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\DescriptorPool.cpp" />
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\DescriptorSets.cpp" />
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\DepthBuffer.cpp" />
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\IndexBuffer.cpp" />
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Camera.cpp" />
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\SyncObjects.cpp" />
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Mesh.cpp" />
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\Texture2D.cpp" />
+    <ClCompile Include="C:\EngineDev\VulkanGameEngine\engine\include\Engine\Renderer\Vulkan\ImGuiLayer.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

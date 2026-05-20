@@ -24,7 +24,13 @@ FetchContent_Declare(
     GIT_TAG master
 )
 
-FetchContent_MakeAvailable(glfw glm imgui stb)
+FetchContent_Declare(
+    tinyobjloader
+    GIT_REPOSITORY https://github.com/tinyobjloader/tinyobjloader.git
+    GIT_TAG release
+)
+
+FetchContent_MakeAvailable(glfw glm imgui stb tinyobjloader)
 
 add_library(imgui_backend STATIC
     ${imgui_SOURCE_DIR}/imgui.cpp
@@ -41,6 +47,12 @@ target_include_directories(imgui_backend PUBLIC
 )
 
 target_link_libraries(imgui_backend PUBLIC glfw Vulkan::Vulkan)
+
+if(MSVC)
+    target_compile_options(imgui_backend PRIVATE
+        $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:/Z7>
+    )
+endif()
 
 add_library(stb_image INTERFACE)
 
