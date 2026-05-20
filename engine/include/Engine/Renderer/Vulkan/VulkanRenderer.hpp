@@ -9,10 +9,16 @@
 #include <Engine/Renderer/Vulkan/GraphicsPipeline.hpp>
 #include <Engine/Renderer/Mesh.hpp>
 #include <Engine/Renderer/Vulkan/DepthBuffer.hpp>
+#include <Engine/Renderer/Vulkan/ImGuiLayer.hpp>
 
 #include <Engine/Renderer/Camera.hpp>
 
 #include <Engine/Platform/Window.hpp>
+
+#include <Engine/Editor/EditorViewport.hpp>
+
+#include <deque>
+#include <string>
 
 namespace Engine
 {
@@ -23,16 +29,17 @@ namespace Engine
             VulkanContext& context,
             Window& window,
             Swapchain& swapchain,
-            RenderPass& renderPass,
-            Framebuffers& framebuffers,
+            RenderPass& renderPass, Framebuffers& framebuffers,
             CommandBuffers& commandBuffers,
             SyncObjects& syncObjects,
             GraphicsPipeline& graphicsPipeline,
-            Mesh& mesh,
+            Scene& scene,
             UniformBuffers& uniformBuffers,
             DescriptorSets& descriptorSets,
 			DepthBuffer& depthBuffer,
-            Camera& camera
+            Camera& camera,
+            ImGuiLayer* imguiLayer,
+            const std::deque<std::string>& eventLog
         );
 
         void DrawFrame();
@@ -50,11 +57,14 @@ namespace Engine
         CommandBuffers& m_CommandBuffers;
         SyncObjects& m_SyncObjects;
         GraphicsPipeline& m_GraphicsPipeline;
-        Mesh& m_Mesh;
+        Scene& m_Scene;
         UniformBuffers& m_UniformBuffers;
         DescriptorSets& m_DescriptorSets;
         DepthBuffer& m_DepthBuffer;
         Camera& m_Camera;
+        ImGuiLayer* m_ImGuiLayer = nullptr;
+        EditorViewport m_Viewport;
+        const std::deque<std::string>& m_EventLog;
 
         uint32_t m_CurrentFrame = 0;
     };

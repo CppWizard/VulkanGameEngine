@@ -5,6 +5,9 @@
 #include <Engine/Renderer/Vulkan/RenderPass.hpp>
 #include <Engine/Renderer/Vulkan/ShaderModule.hpp>
 #include <Engine/Renderer/Vulkan/DescriptorSetLayout.hpp>
+#include <Engine/Renderer/Vulkan/MaterialDescriptorSetLayout.hpp>
+#include <Engine/Renderer/Vulkan/DescriptorPool.hpp>
+#include <array>
 
 #include <vulkan/vulkan.h>
 
@@ -19,7 +22,8 @@ namespace Engine
             const RenderPass& renderPass,
             const ShaderModule& vertexShader,
             const ShaderModule& fragmentShader,
-			const DescriptorSetLayout& descriptorSetLayout
+			const DescriptorSetLayout& descriptorSetLayout,
+            const MaterialDescriptorSetLayout& materialLayout
         );
 
         ~GraphicsPipeline();
@@ -36,7 +40,8 @@ namespace Engine
             const RenderPass& renderPass,
             const ShaderModule& vertexShader,
             const ShaderModule& fragmentShader,
-			const DescriptorSetLayout& descriptorSetLayout
+			const DescriptorSetLayout& descriptorSetLayout,
+            const MaterialDescriptorSetLayout& materialDescriptorSetLayout
         );
 
         void Cleanup();

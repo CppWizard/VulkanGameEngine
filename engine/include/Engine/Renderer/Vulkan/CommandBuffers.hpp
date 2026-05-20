@@ -9,8 +9,11 @@
 #include <Engine/Renderer/Vulkan/VertexBuffer.hpp>
 #include <Engine/Renderer/Vulkan/DescriptorSets.hpp>
 #include <Engine/Renderer/Vulkan/IndexBuffer.hpp>
+#include <Engine/Renderer/Vulkan/ImGuiLayer.hpp>
+#include <Engine/Renderer/PushConstants.hpp>
 
 #include <Engine/Renderer/Mesh.hpp>
+#include <Engine/Scene/Scene.hpp>
 
 #include <vulkan/vulkan.h>
 
@@ -54,8 +57,9 @@ namespace Engine
             const RenderPass& renderPass,
             const Framebuffers& framebuffers,
             const GraphicsPipeline& pipeline,
-            const Mesh& mesh,
-			const DescriptorSets& descriptorSets
+            const Scene& scene,
+			const DescriptorSets& descriptorSets,
+			ImGuiLayer* imguiLayer
         );
 
         void Recreate(const Swapchain& swapchain);

@@ -18,8 +18,7 @@ namespace Engine
             VulkanContext& context,
             const DescriptorPool& pool,
             const DescriptorSetLayout& layout,
-            const UniformBuffers& uniformBuffers,
-            const Texture2D& texture
+            const UniformBuffers& uniformBuffers
         );
 
         VkDescriptorSet Get(uint32_t frameIndex) const

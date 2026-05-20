@@ -35,6 +35,11 @@ namespace Engine
 			throw std::runtime_error("Failed to create command pool!");
 		}
 
+		if (m_CommandPool == VK_NULL_HANDLE)
+		{
+			throw std::runtime_error("Command pool is null after creation.");
+		}
+
 		ENGINE_INFO("Command pool created.");
 	}
 

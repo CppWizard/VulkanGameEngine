@@ -5,15 +5,15 @@
 namespace Engine
 {
     Camera::Camera(
-        float fovDegrees,
+        float fov,
         float aspectRatio,
-        float nearPlane,
-        float farPlane
+        float nearClip,
+        float farClip
     )
-        : m_Fov(fovDegrees),
+        : m_FOV(fov),
         m_AspectRatio(aspectRatio),
-        m_NearPlane(nearPlane),
-        m_FarPlane(farPlane)
+        m_NearClip(nearClip),
+        m_FarClip(farClip)
     {}
 
     void Camera::SetPosition(const glm::vec3& position)
@@ -26,14 +26,9 @@ namespace Engine
         m_Target = target;
     }
 
-    const glm::vec3& Camera::GetPosition() const
+    void Camera::SetAspectRatio(float aspectRatio)
     {
-        return m_Position;
-    }
-
-    const glm::vec3& Camera::GetTarget() const
-    {
-        return m_Target;
+        m_AspectRatio = aspectRatio;
     }
 
     glm::mat4 Camera::GetViewMatrix() const
@@ -49,20 +44,14 @@ namespace Engine
     {
         glm::mat4 projection =
             glm::perspective(
-                glm::radians(m_Fov),
+                glm::radians(m_FOV),
                 m_AspectRatio,
-                m_NearPlane,
-                m_FarPlane
+                m_NearClip,
+                m_FarClip
             );
 
-        // Vulkan clip-space correction
         projection[1][1] *= -1.0f;
 
         return projection;
-    }
-
-    void Camera::SetAspectRatio(float aspectRatio)
-    {
-        m_AspectRatio = aspectRatio;
     }
 }

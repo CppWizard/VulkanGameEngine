@@ -1,6 +1,7 @@
 #pragma once
 
 #include <vulkan/vulkan.h>
+#include <glm/glm.hpp>
 
 #include <array>
 #include <cstddef>
@@ -9,9 +10,16 @@ namespace Engine
 {
     struct Vertex
     {
-        float Position[3];
-        float Color[3];
-        float TexCoord[2];
+        glm::vec3 Position;
+        glm::vec3 Color;
+        glm::vec2 TexCoord;
+
+        bool operator==(const Vertex& other) const
+        {
+            return Position == other.Position &&
+                Color == other.Color &&
+                TexCoord == other.TexCoord;
+        }
 
         static VkVertexInputBindingDescription GetBindingDescription()
         {

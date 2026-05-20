@@ -17,9 +17,6 @@ namespace Engine
         SyncObjects(VulkanContext& context, uint32_t swapchainImageCount);
         ~SyncObjects();
 
-        SyncObjects(const SyncObjects&) = delete;
-        SyncObjects& operator=(const SyncObjects&) = delete;
-
         VkSemaphore GetImageAvailableSemaphore(uint32_t frame) const;
         void Recreate(uint32_t swapchainImageCount);
 

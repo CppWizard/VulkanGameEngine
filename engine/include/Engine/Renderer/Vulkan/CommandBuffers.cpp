@@ -66,8 +66,9 @@ namespace Engine
         const RenderPass& renderPass,
         const Framebuffers& framebuffers,
         const GraphicsPipeline& pipeline,
-        const Mesh& mesh,
-		const DescriptorSets& descriptorSets
+        const Scene& scene,
+		const DescriptorSets& descriptorSets,
+		ImGuiLayer* imguiLayer
     )
     {
         VkCommandBuffer commandBuffer = m_CommandBuffers[imageIndex];
@@ -121,39 +122,64 @@ namespace Engine
             nullptr
         );
 
-        VkBuffer vertexBuffers[] =
+        for (const auto& object : scene.GetObjects())
         {
-			mesh.GetVertexBuffer().GetHandle()
-        };
+            if (!object || !object->MeshData)
+                continue;
 
-        VkDeviceSize offsets[] =
+            const Mesh& mesh = *object->MeshData;
+
+            PushConstants pushConstants{};
+            pushConstants.Model = object->Transform.GetMatrix();
+
+            vkCmdPushConstants(
+                commandBuffer,
+                pipeline.GetLayout(),
+                VK_SHADER_STAGE_VERTEX_BIT,
+                0,
+                sizeof(PushConstants),
+                &pushConstants
+            );
+
+            VkBuffer vertexBuffers[] =
+            {
+                mesh.GetVertexBuffer().GetHandle()
+            };
+
+            VkDeviceSize offsets[] =
+            {
+                0
+            };
+
+            vkCmdBindVertexBuffers(
+                commandBuffer,
+                0,
+                1,
+                vertexBuffers,
+                offsets
+            );
+
+            vkCmdBindIndexBuffer(
+                commandBuffer,
+                mesh.GetIndexBuffer().GetHandle(),
+                0,
+                VK_INDEX_TYPE_UINT32
+            );
+
+            vkCmdDrawIndexed(
+                commandBuffer,
+                mesh.GetIndexCount(),
+                1,
+                0,
+                0,
+                0
+            );
+        }
+
+        if (imguiLayer)
         {
-            0
-        };
-
-        vkCmdBindVertexBuffers(
-            commandBuffer,
-            0,
-            1,
-            vertexBuffers,
-            offsets
-        );
-
-        vkCmdBindIndexBuffer(
-            commandBuffer,
-			mesh.GetIndexBuffer().GetHandle(),
-            0,
-            VK_INDEX_TYPE_UINT32
-        );
-
-        vkCmdDrawIndexed(
-            commandBuffer,
-            mesh.GetIndexCount(),
-            1,
-            0,
-            0,
-            0
-        );
+            imguiLayer->Render(commandBuffer);
+        }
 
         vkCmdEndRenderPass(commandBuffer);
 

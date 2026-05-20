@@ -1,7 +1,9 @@
 #include <Engine/Renderer/Vulkan/VulkanRenderer.hpp>
 #include <Engine/Renderer/UniformBufferObject.hpp>
+#include <Engine/Core/Input.hpp>
 
 #include <GLFW/glfw3.h>
+#include <imgui.h>
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -18,13 +20,15 @@ namespace Engine
         RenderPass& renderPass,
         Framebuffers& framebuffers,
         CommandBuffers& commandBuffers,
-		SyncObjects& syncObjects,
+        SyncObjects& syncObjects,
         GraphicsPipeline& graphicsPipeline,
-        Mesh& mesh,
-		UniformBuffers& uniformBuffers,
-		DescriptorSets& descriptorSets,
-		DepthBuffer& depthBuffer,
-		Camera& camera
+        Scene& scene,
+        UniformBuffers& uniformBuffers,
+        DescriptorSets& descriptorSets,
+        DepthBuffer& depthBuffer,
+        Camera& camera,
+        ImGuiLayer* imguiLayer,
+        const std::deque<std::string>& eventLog
     )
         : m_Context(context),
         m_Window(window),
@@ -32,13 +36,15 @@ namespace Engine
         m_RenderPass(renderPass),
         m_Framebuffers(framebuffers),
         m_CommandBuffers(commandBuffers),
-		m_SyncObjects(syncObjects),
-		m_GraphicsPipeline(graphicsPipeline),
-        m_Mesh(mesh),
+        m_SyncObjects(syncObjects),
+        m_GraphicsPipeline(graphicsPipeline),
+        m_Scene(scene),
 		m_UniformBuffers(uniformBuffers),
 		m_DescriptorSets(descriptorSets),
 		m_DepthBuffer(depthBuffer),
-		m_Camera(camera)
+		m_Camera(camera),
+		m_ImGuiLayer(imguiLayer),
+        m_EventLog(eventLog)
     {}
 
     void VulkanRenderer::DrawFrame()
@@ -78,15 +84,75 @@ namespace Engine
 
         vkResetFences(device, 1, &inFlightFence);
 
-        UniformBufferObject ubo{};
-        ubo.Model =
-            glm::rotate(
-                glm::mat4(1.0f),
-                static_cast<float>(glfwGetTime()) *
-                glm::radians(90.0f),
-                glm::vec3(0.0f, 0.0f, 1.0f)
-            );
+        if (m_ImGuiLayer)
+        {
+            m_ImGuiLayer->BeginFrame();
 
+            if (ImGui::BeginMainMenuBar())
+            {
+                if (ImGui::BeginMenu("File"))
+                {
+                    ImGui::MenuItem("Exit");
+                    ImGui::EndMenu();
+                }
+
+                if (ImGui::BeginMenu("View"))
+                {
+                    ImGui::MenuItem("Input Debug");
+                    ImGui::MenuItem("Scene Hierarchy");
+                    ImGui::MenuItem("Inspector");
+                    ImGui::EndMenu();
+                }
+
+                ImGui::EndMainMenuBar();
+            }
+
+            m_Viewport.Draw();
+
+            ImGui::Begin("Input Debug");
+            ImGui::Text("Mouse Position: %.1f, %.1f", Input::GetMouseX(), Input::GetMouseY());
+            ImGui::Text("Mouse Delta: %.1f, %.1f", Input::GetMouseDeltaX(), Input::GetMouseDeltaY());
+            ImGui::Separator();
+            ImGui::Text("W: %s", Input::IsKeyDown(GLFW_KEY_W) ? "Down" : "Up");
+            ImGui::Text("A: %s", Input::IsKeyDown(GLFW_KEY_A) ? "Down" : "Up");
+            ImGui::Text("S: %s", Input::IsKeyDown(GLFW_KEY_S) ? "Down" : "Up");
+            ImGui::Text("D: %s", Input::IsKeyDown(GLFW_KEY_D) ? "Down" : "Up");
+            ImGui::End();
+
+            ImGui::Begin("Scene Hierarchy");
+            ImGui::Text("Scene");
+            ImGui::BulletText("Quad");
+            ImGui::End();
+
+            static float position[3] = { 0.0f, 0.0f, 0.0f };
+
+            ImGui::Begin("Inspector");
+            ImGui::Text("Selected: Quad");
+            ImGui::DragFloat3("Position", position);
+            ImGui::Text("Viewport Focused: %s", m_Viewport.IsFocused() ? "true" : "false");
+            ImGui::Text("Viewport Hovered: %s", m_Viewport.IsHovered() ? "true" : "false");
+            ImGui::End();
+
+            ImGui::Begin("Event Log");
+
+            if (ImGui::Button("Clear"))
+            {
+                // make this editable later
+            }
+
+            ImGui::Separator();
+
+            for (const auto& eventText : m_EventLog)
+            {
+                ImGui::TextWrapped("%s", eventText.c_str());
+            }
+
+            ImGui::End();
+
+            m_ImGuiLayer->EndFrame();
+        }
+
+        UniformBufferObject ubo{};
         ubo.View = m_Camera.GetViewMatrix();
         ubo.Projection = m_Camera.GetProjectionMatrix();
 
@@ -99,8 +165,9 @@ namespace Engine
             m_RenderPass,
             m_Framebuffers,
 			m_GraphicsPipeline,
-            m_Mesh,
-			m_DescriptorSets
+            m_Scene,
+			m_DescriptorSets,
+			m_ImGuiLayer
         );
 
         VkSemaphore renderFinishedSemaphore =
@@ -134,6 +201,11 @@ namespace Engine
             inFlightFence) != VK_SUCCESS)
         {
             throw std::runtime_error("Failed to submit draw command buffer.");
+        }
+
+        if (m_ImGuiLayer)
+        {
+            m_ImGuiLayer->UpdatePlatformWindows();
         }
 
         VkSwapchainKHR swapchains[] =
@@ -179,7 +251,7 @@ namespace Engine
         m_SyncObjects.Recreate(m_Swapchain.GetImageCount());
         m_CommandBuffers.Recreate(m_Swapchain);
         m_Framebuffers.Recreate(m_Swapchain, m_RenderPass, m_DepthBuffer);
-        m_CommandBuffers.Recreate(m_Swapchain);
+
 
         m_Window.ResetResizeFlag();
 

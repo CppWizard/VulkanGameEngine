@@ -1,30 +1,37 @@
 #pragma once
 
-#include <Engine/Renderer/Mesh.hpp>
-#include <Engine/Renderer/Vulkan/VertexBuffer.hpp>
-#include <Engine/Renderer/Vulkan/IndexBuffer.hpp>
+#include <Engine/Renderer/SubMesh.hpp>
+#include <Engine/Renderer/Vertex.hpp>
+#include <Engine/Renderer/Vulkan/VulkanContext.hpp>
 
-#include <memory>
 #include <vector>
+#include <memory>
 
 namespace Engine
 {
-	class Mesh
-	{
-	public:
-		Mesh(
-			VulkanContext& context,
-			const std::vector<Vertex>& vertices,
-			const std::vector<uint32_t>& indices
-		);
+    class Mesh
+    {
+    public:
+        explicit Mesh() = default;
 
-		const VertexBuffer& GetVertexBuffer() const;
-		const IndexBuffer& GetIndexBuffer() const;
+        Mesh(
+            VulkanContext& context,
+            const std::vector<Vertex>& vertices,
+            const std::vector<uint32_t>& indices
+        );
 
-		uint32_t GetIndexCount() const;
+        void AddSubMesh(std::unique_ptr<SubMesh> subMesh);
 
-	private:
-		std::unique_ptr<VertexBuffer> m_VertexBuffer;
-		std::unique_ptr<IndexBuffer> m_IndexBuffer;
-	};
+        const std::vector<std::unique_ptr<SubMesh>>& GetSubMeshes() const
+        {
+            return m_SubMeshes;
+        }
+
+        const VertexBuffer& GetVertexBuffer() const;
+        const IndexBuffer& GetIndexBuffer() const;
+        uint32_t GetIndexCount() const;
+
+    private:
+        std::vector<std::unique_ptr<SubMesh>> m_SubMeshes;
+    };
 }

@@ -65,7 +65,7 @@ namespace Engine
     {
         VkDevice device = m_Context.getDevice();
 
-        for (VkSemaphore semaphore : m_RenderFinishedSemaphores)
+        for (VkSemaphore semaphore : m_ImageAvailableSemaphores)
         {
             if (semaphore)
             {
@@ -77,7 +77,7 @@ namespace Engine
             }
         }
 
-        for (VkSemaphore semaphore : m_ImageAvailableSemaphores)
+        for (VkSemaphore semaphore : m_RenderFinishedSemaphores)
         {
             if (semaphore)
             {
@@ -101,8 +101,8 @@ namespace Engine
             }
         }
 
-        m_RenderFinishedSemaphores.clear();
         m_ImageAvailableSemaphores.clear();
+        m_RenderFinishedSemaphores.clear();
         m_InFlightFences.clear();
 
         ENGINE_INFO("Sync objects destroyed.");

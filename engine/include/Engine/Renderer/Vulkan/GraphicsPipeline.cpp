@@ -1,5 +1,6 @@
 #include <Engine/Renderer/Vulkan/GraphicsPipeline.hpp>
 #include <Engine/Renderer/Vertex.hpp>
+#include <Engine/Renderer/PushConstants.hpp>
 
 #include <Engine/Core/Logger.hpp>
 
@@ -14,11 +15,12 @@ namespace Engine
         const RenderPass& renderPass,
         const ShaderModule& vertexShader,
         const ShaderModule& fragmentShader,
-		const DescriptorSetLayout& descriptorSetLayout
+		const DescriptorSetLayout& descriptorSetLayout,
+        const MaterialDescriptorSetLayout& materialDescriptorSetLayout
     )
         : m_Context(context)
     {
-        Create(swapchain, renderPass, vertexShader, fragmentShader, descriptorSetLayout);
+        Create(swapchain, renderPass, vertexShader, fragmentShader, descriptorSetLayout, materialDescriptorSetLayout);
     }
 
     GraphicsPipeline::~GraphicsPipeline()
@@ -31,7 +33,8 @@ namespace Engine
         const RenderPass& renderPass,
         const ShaderModule& vertexShader,
         const ShaderModule& fragmentShader,
-		const DescriptorSetLayout& descriptorSetLayout
+		const DescriptorSetLayout& descriptorSetLayout,
+		const MaterialDescriptorSetLayout& materialDescriptorSetLayout
     )
     {
         auto vertStage =
@@ -118,16 +121,24 @@ namespace Engine
         colorBlending.attachmentCount = 1;
         colorBlending.pAttachments = &colorBlendAttachment;
 
-        VkDescriptorSetLayout setLayouts[] =
+        VkPushConstantRange pushConstantRange{};
+        pushConstantRange.stageFlags = VK_SHADER_STAGE_VERTEX_BIT;
+        pushConstantRange.offset = 0;
+        pushConstantRange.size = sizeof(PushConstants);
+
+        std::array<VkDescriptorSetLayout, 2> setLayouts =
         {
-            descriptorSetLayout.GetHandle()
+            descriptorSetLayout.GetHandle(),
+            materialDescriptorSetLayout.GetHandle()
         };
 
         VkPipelineLayoutCreateInfo pipelineLayoutInfo{};
         pipelineLayoutInfo.sType =
             VK_STRUCTURE_TYPE_PIPELINE_LAYOUT_CREATE_INFO;
-        pipelineLayoutInfo.setLayoutCount = 1;
-        pipelineLayoutInfo.pSetLayouts = setLayouts;
+        pipelineLayoutInfo.setLayoutCount = static_cast<uint32_t>(setLayouts.size());
+        pipelineLayoutInfo.pSetLayouts = setLayouts.data();
+        pipelineLayoutInfo.pushConstantRangeCount = 1;
+        pipelineLayoutInfo.pPushConstantRanges = &pushConstantRange;
 
         if (vkCreatePipelineLayout(
             m_Context.getDevice(),

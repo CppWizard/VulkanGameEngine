@@ -22,6 +22,11 @@ namespace Engine
         uint32_t frameIndex,
         const UniformBufferObject& ubo)
     {
+        if (frameIndex >= m_Buffers.size() || !m_Buffers[frameIndex])
+        {
+            throw std::runtime_error("Invalid uniform buffer frame index.");
+        }
+
         m_Buffers[frameIndex]->SetData(&ubo, sizeof(UniformBufferObject));
     }
 

@@ -350,7 +350,10 @@ namespace Engine
             vkDestroySampler(device, m_Sampler, nullptr);
 
         if (m_ImageView)
+        {
             vkDestroyImageView(device, m_ImageView, nullptr);
+            m_Sampler = VK_NULL_HANDLE;
+        }
 
         if (m_Image)
             vkDestroyImage(device, m_Image, nullptr);
@@ -358,4 +361,6 @@ namespace Engine
         if (m_Memory)
             vkFreeMemory(device, m_Memory, nullptr);
     }
+
+    
 }

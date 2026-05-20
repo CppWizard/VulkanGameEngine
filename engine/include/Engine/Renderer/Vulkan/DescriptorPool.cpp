@@ -8,17 +8,18 @@ namespace Engine
         : m_Context(context)
     {
         std::array<VkDescriptorPoolSize, 2> poolSizes{};
+
         poolSizes[0].type = VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER;
         poolSizes[0].descriptorCount = SyncObjects::MaxFramesInFlight;
 
         poolSizes[1].type = VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER;
-        poolSizes[1].descriptorCount = SyncObjects::MaxFramesInFlight;
+        poolSizes[1].descriptorCount = 512;
 
         VkDescriptorPoolCreateInfo info{};
         info.sType = VK_STRUCTURE_TYPE_DESCRIPTOR_POOL_CREATE_INFO;
         info.poolSizeCount = static_cast<uint32_t>(poolSizes.size());
         info.pPoolSizes = poolSizes.data();
-        info.maxSets = SyncObjects::MaxFramesInFlight;
+        info.maxSets = SyncObjects::MaxFramesInFlight + 512;
 
         if (vkCreateDescriptorPool(
             m_Context.getDevice(),
